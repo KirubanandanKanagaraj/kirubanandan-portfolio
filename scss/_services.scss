@@ -3,3 +3,14 @@
   margin: 15px 0;
   text-transform: none;
 }
+
+#services {
+  .devicons {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+  }
+  .devicons-photoshop:before {
+    content: "\e6b8";
+  }
+}
