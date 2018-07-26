@@ -227,18 +227,21 @@ header.masthead .intro-text .intro-heading {
 }
 
 .service-heading {
-  margin: 15px 0;
+  margin: 10px 0 40px 0;
   text-transform: none;
+  font-size: 1.2rem;
+}
+
+section h3.section-subheading {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
 }
 
 #services .devicons {
   z-index: 1;
   position: relative;
   color: #fff;
-}
-
-#services .devicons-photoshop:before {
-  content: "\e6b8";
+  top: 5px;
 }
 
 #portfolio .portfolio-item {

@@ -1,7 +1,13 @@
 // Styling for the services section
 .service-heading {
-  margin: 15px 0;
+  margin: 10px 0 40px 0;
   text-transform: none;
+  font-size: 1.2rem;
+}
+
+section h3.section-subheading {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
 }
 
 #services {
@@ -9,8 +15,6 @@
     z-index: 1;
     position: relative;
     color: #fff;
-  }
-  .devicons-photoshop:before {
-    content: "\e6b8";
+    top: 5px;
   }
 }
