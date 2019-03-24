@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v4.1.1 (https://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2018 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 body {
@@ -18,6 +18,10 @@ a {
 
 a:hover {
   color: #fec503;
+}
+
+img {
+  max-width: 100%;
 }
 
 .text-primary {
@@ -102,6 +106,14 @@ img::-moz-selection {
   background: transparent;
 }
 
+.margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px !important;
+}
+
 #mainNav {
   background-color: #212529;
 }
@@ -172,7 +184,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/kiruba-side-himalayas.jpg");
+  background-image: linear-gradient(to right top, #263942, #24414f, #204a5d, #1a526b, #0e5b7a);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -182,23 +194,42 @@ header.masthead {
   background-size: cover;
 }
 
+header.masthead .row {
+  align-items: center;
+}
+
+header.masthead .row .dp-pic-holder {
+  border-radius: 5px 85px 85px 5px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 200px 0 150px 0;
+}
+
+header.masthead .row .list-inline-item {
+  text-align: center;
+}
+
 header.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px;
   max-width: 625px;
   margin: 0 auto;
+  text-align: left;
 }
 
 header.masthead .intro-text .intro-lead-in {
   font-size: 22px;
-  font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+header.masthead .intro-text .intro-lead-in.small-text {
+  font-size: 25px;
+}
+
 header.masthead .intro-text .intro-heading {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
@@ -207,21 +238,20 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 180px;
+    padding-bottom: 180px;
   }
   header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
-    font-style: italic;
+    font-size: 28px;
     line-height: 40px;
     margin-bottom: 25px;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   header.masthead .intro-text .intro-heading {
-    font-size: 65px;
+    font-size: 52px;
     font-weight: 700;
-    line-height: 70px;
-    margin-bottom: 50px;
+    line-height: 58px;
+    margin-bottom: 15px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 }
@@ -478,6 +508,13 @@ section h3.section-subheading {
   margin-top: 12px;
 }
 
+.timeline > li .timeline-image.kiruba-bg {
+  background-image: url(/img/bg-prof-pic-Recovered.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   padding: 0 20px 0 100px;
@@ -575,7 +612,7 @@ section h3.section-subheading {
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 20px 20px 20px 100px;
   }
   .timeline > li .timeline-image {
     width: 170px;
@@ -586,7 +623,7 @@ section h3.section-subheading {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
+    padding: 20px 100px 20px 20px;
   }
 }
 
