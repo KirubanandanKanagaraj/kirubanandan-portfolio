@@ -14,6 +14,9 @@ a {
     color: darken($primary, 10%);
   }
 }
+img{
+  max-width: 100%;
+}
 
 .text-primary {
   color: $primary !important;
@@ -95,4 +98,12 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+
+.margin-bottom-10{
+  margin-bottom: 10px !important;
+}
+.margin-bottom-50{
+  margin-bottom: 50px !important;
 }
