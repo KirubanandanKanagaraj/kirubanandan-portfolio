@@ -12,6 +12,7 @@
     "start": "npm run build && node scripts/start.js",
     "start:debug": "npm run build && node scripts/start-debug.js"
   },
+  "description": "Personal Portfolio",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "4.5.0"
