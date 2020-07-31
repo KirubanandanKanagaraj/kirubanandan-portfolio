@@ -10373,18 +10373,38 @@ header.masthead .prof-pic-container .circle-profile-pic {
   border-right-width: 14px;
   border-left-width: 0;
 }
+@-webkit-keyframes pulseAnimation {
+  0% {
+    box-shadow: 0 0 0 0rem rgba(255, 192, 203, 0.2), 0 0 0 0.25rem rgba(255, 192, 203, 0.2), 0 0 0 0.5rem rgba(255, 192, 203, 0.2), 0 0 0 1rem rgba(255, 192, 203, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 0.3rem rgba(255, 0, 0, 0.2), 0 0 0 1.05rem rgba(255, 0, 0, 0.2), 0 0 0 2.05rem rgba(255, 0, 0, 0);
+  }
+}
+@keyframes pulseAnimation {
+  0% {
+    box-shadow: 0 0 0 0rem rgba(255, 192, 203, 0.2), 0 0 0 0.25rem rgba(255, 192, 203, 0.2), 0 0 0 0.5rem rgba(255, 192, 203, 0.2), 0 0 0 1rem rgba(255, 192, 203, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 0.3rem rgba(255, 0, 0, 0.2), 0 0 0 1.05rem rgba(255, 0, 0, 0.2), 0 0 0 2.05rem rgba(255, 0, 0, 0);
+  }
+}
 .timeline > li .timeline-image {
   position: absolute;
   z-index: 100;
   left: 0;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   margin-left: 25px;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 5px solid #e9ecef;
   border-radius: 100%;
   background-color: #fed136;
+}
+.timeline > li .timeline-image.present-job {
+  -webkit-animation: pulseAnimation 1s linear infinite;
+          animation: pulseAnimation 1s linear infinite;
 }
 .timeline > li .timeline-image h4 {
   font-size: 10px;
@@ -10442,9 +10462,9 @@ header.masthead .prof-pic-container .circle-profile-pic {
   }
   .timeline > li .timeline-image {
     left: 50%;
-    width: 50px;
-    height: 50px;
-    margin-left: -25px;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
   }
   .timeline > li .timeline-image h4 {
     font-size: 13px;
@@ -10468,9 +10488,9 @@ header.masthead .prof-pic-container .circle-profile-pic {
     padding: 0 20px 20px;
   }
   .timeline > li .timeline-image {
-    width: 50px;
-    height: 50px;
-    margin-left: -25px;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
   }
   .timeline > li .timeline-image h4 {
     font-size: 18px;
@@ -10492,9 +10512,9 @@ header.masthead .prof-pic-container .circle-profile-pic {
     padding: 0 20px 20px 100px;
   }
   .timeline > li .timeline-image {
-    width: 50px;
-    height: 50px;
-    margin-left: -25px;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
   }
   .timeline > li .timeline-image h4 {
     margin-top: 40px;
